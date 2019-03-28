@@ -25,9 +25,9 @@ def hello():
 def hello_name():
     data = request.get_json(force=True)
     name=data['name']
-    print(name)
+    #print(name)
     res  =giverec(model,name,dicte)
-    print(list(res))
+    #print(list(res))
     return render_template('template.html', res=res,query=name)
 
 
